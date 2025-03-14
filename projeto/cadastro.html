@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cadastro</title>
+ <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+ <div class="bg-image"></div>
+<br><br>
+ <div class="container">
+   <div class="card">
+     <h2>Cadastro</h2>
+     <form id="cadastroForm">
+
+       <!-- Nome -->
+       <label for="nome">Nome:</label>
+       <input type="text" id="nome" class="form-control" name="nome" placeholder="Digite seu nome" required>
+       <span id="nomeError" class="error-message"></span>
+
+       <!-- Telefone -->
+       <label for="telefone">Telefone:</label>
+       <div class="input-container">
+         <input type="tel" id="telefone" class="form-control" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+         <span id="telefoneStatus" class="status-icon"></span>
+       </div>
+       <span id="telefoneError" class="error-message"></span>
+
+       <!-- Data de Nascimento -->
+       <label for="dataNascimento">Data de Nascimento:</label>
+       <input type="date" id="dataNascimento" class="form-control" name="dataNascimento" required>
+       <span id="dataNascimentoError" class="error-message"></span>
+
+       <!-- CEP e Endereço -->
+       <label for="cep">CEP:</label>
+       <div class="input-group">
+         <input type="text" id="cep" class="form-control" required>
+         <button type="button" class="btn-primary" onclick="buscarEndereco()">Buscar Endereço</button>
+       </div>
+       <br>
+
+       <label for="endereco">Endereço:</label>
+       <input type="text" id="endereco" class="form-control" readonly><br>
+
+       <label for="numero">Número:</label>
+       <input type="text" id="numero" class="form-control" required><br>
+
+       <label for="complemento">Complemento:</label>
+       <input type="text" id="complemento" class="form-control"><br>
+
+       <!-- Botões -->
+       <div class="buttons">
+         <button type="button" id="limparBtn" class="btn-link">Limpar</button>
+         <button type="submit" class="btn-primary">Cadastrar</button>
+       </div>
+     </form>
+   </div>
+ </div>
+
+ <script src="cadastro.js"></script>
+</body>
+</html>

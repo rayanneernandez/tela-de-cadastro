@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e77930;
+    background-image: url('inspiring-view-morning-light.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-image {
+    height: 300px;
+    background-image: url('https://via.placeholder.com/800x300');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 400px;
+}
+
+.card {
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #f15829;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-link {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+}
+
+/* Mensagens de erro */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.status-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: green;
+}
+
+
+/* Estilo para campos válidos */
+input.valid {
+    border: 2px solid green;
+}
+
+/* Estilo para campos inválidos */
+input.invalid {
+    border: 2px solid red;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
